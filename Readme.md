@@ -19,7 +19,7 @@
   Replace the current path with a new `path`.
 
 ### back(steps)
-  Move backward an optional number of `steps`, defaults to `1`.
+  Move backward an optional number of `steps`, defaults to `1`. Aliased to `backward()` for consistency.
 
 ### forward(steps)
   Move forward an optional number of `steps`, defaults to `1`.

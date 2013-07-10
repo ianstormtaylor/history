@@ -38,7 +38,8 @@ exports.replace = function (url) {
  * @param {Number} steps (optional)
  */
 
-exports.back = function (steps) {
+exports.back =
+exports.backward = function (steps) {
   steps || (steps = 1);
   window.history.go(-1 * steps);
 };

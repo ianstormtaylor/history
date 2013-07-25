@@ -5,8 +5,19 @@
  * @return {String}
  */
 
-exports.get = function () {
+exports.path = function () {
   return window.location.pathname;
+};
+
+
+/**
+ * Get the current state.
+ *
+ * @return {Object}
+ */
+
+exports.state = function () {
+  return window.history.state;
 };
 
 
@@ -14,10 +25,11 @@ exports.get = function () {
  * Push a new `url` on to the history.
  *
  * @param {String} url
+ * @param {Object} state (optional)
  */
 
-exports.push = function (url) {
-  window.history.pushState(null, null, url);
+exports.push = function (url, state) {
+  window.history.pushState(state, null, url);
 };
 
 
@@ -25,10 +37,11 @@ exports.push = function (url) {
  * Replace the current url with a new `url`.
  *
  * @param {String} url
+ * @param {Object} state (optional)
  */
 
-exports.replace = function (url) {
-  window.history.replaceState(null, null, url);
+exports.replace = function (url, state) {
+  window.history.replaceState(state, null, url);
 };
 
 

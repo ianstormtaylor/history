@@ -14,4 +14,6 @@ var app = express()
   .get('*', function (req, res) {
     res.render('index.html');
   })
-  .listen(7777);
+  .listen(7777, function () {
+    console.log('Listening on port 7777...');
+  });

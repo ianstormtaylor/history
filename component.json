@@ -2,7 +2,7 @@
   "name": "history",
   "repo": "ianstormtaylor/history",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A nicer wrapper around the browser's History API. Push, replace, back, forward, etc.",
   "keywords": ["history", "push", "pushstate", "replace", "replacestate", "back", "forward"],
   "development": {

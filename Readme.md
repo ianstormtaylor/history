@@ -1,4 +1,3 @@
-
 # history
 
   A nicer wrapper around the browser's History API. Push, replace, back, forward, etc.
@@ -9,14 +8,17 @@
 
 ## API
 
-### get()
-  Get the current `pathname`.
+### path()
+  Get the current path. (`window.location.pathname`)
 
-### push(path)
-  Push the `path` onto the history stack.
+### state()
+  Get the current state. (`window.history.state`)
 
-### replace(path)
-  Replace the current path with a new `path`.
+### push(path, state)
+  Push the `path` onto the history stack, with an optional `state` object.
+
+### replace(path, state)
+  Replace the current path with a new `path`, and optional `state` object.
 
 ### back(steps)
   Move backward an optional number of `steps`, defaults to `1`. Aliased to `backward()` for consistency.

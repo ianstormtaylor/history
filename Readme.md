@@ -6,6 +6,20 @@
 
     $ component install ianstormtaylor/history
 
+## Example
+
+```js
+var history = require('history');
+
+history.push('/one');
+history.push('/two');
+history.push('/three');
+history.back();     // at `/two`
+history.back();     // at `/one`
+history.forward(2); // at `/three`
+history.path();     // "/three"
+```
+
 ## API
 
 ### .path()
